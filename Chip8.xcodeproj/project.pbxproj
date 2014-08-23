@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		27C2FDCD19A9288500C6D6FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C2FDCC19A9288500C6D6FB /* main.c */; };
 		27C2FDCF19A9288500C6D6FB /* Chip8.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C2FDCE19A9288500C6D6FB /* Chip8.1 */; };
+		27C2FDD719A928F000C6D6FB /* Graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C2FDD619A928F000C6D6FB /* Graphics.c */; };
+		27C2FDDA19A929FB00C6D6FB /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C2FDD919A929FB00C6D6FB /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,9 @@
 		27C2FDC919A9288500C6D6FB /* Chip8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chip8; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C2FDCC19A9288500C6D6FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		27C2FDCE19A9288500C6D6FB /* Chip8.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Chip8.1; sourceTree = "<group>"; };
+		27C2FDD619A928F000C6D6FB /* Graphics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Graphics.c; sourceTree = "<group>"; };
+		27C2FDD819A928FE00C6D6FB /* Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = "<group>"; };
+		27C2FDD919A929FB00C6D6FB /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C2FDDA19A929FB00C6D6FB /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 		27C2FDC019A9288500C6D6FB = {
 			isa = PBXGroup;
 			children = (
+				27C2FDD919A929FB00C6D6FB /* SDL2.framework */,
 				27C2FDCB19A9288500C6D6FB /* Chip8 */,
 				27C2FDCA19A9288500C6D6FB /* Products */,
 			);
@@ -60,10 +67,20 @@
 		27C2FDCB19A9288500C6D6FB /* Chip8 */ = {
 			isa = PBXGroup;
 			children = (
+				27C2FDD519A928D100C6D6FB /* Graphics */,
 				27C2FDCC19A9288500C6D6FB /* main.c */,
 				27C2FDCE19A9288500C6D6FB /* Chip8.1 */,
 			);
 			path = Chip8;
+			sourceTree = "<group>";
+		};
+		27C2FDD519A928D100C6D6FB /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				27C2FDD619A928F000C6D6FB /* Graphics.c */,
+				27C2FDD819A928FE00C6D6FB /* Graphics.h */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C2FDD719A928F000C6D6FB /* Graphics.c in Sources */,
 				27C2FDCD19A9288500C6D6FB /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +215,10 @@
 		27C2FDD319A9288500C6D6FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -204,6 +226,10 @@
 		27C2FDD419A9288500C6D6FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

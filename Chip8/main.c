@@ -7,12 +7,19 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "Graphics.h"
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    Graphics_ChipScreen *screen = malloc( sizeof( ChipScreen ) );
+    
+    screen->screen[31] = 1;
+    
+    printf( "%llu", screen->screen[31] );
+    
+    free( screen );
     return 0;
 }
 
