@@ -186,6 +186,226 @@ c0000000053836A570000000000001770
 t1401121367
 s6000
 
+N/Library/Frameworks/SDL2.framework/Headers/SDL.h
+c0000000053F8EF030000000000000FF7
+t1408823043
+s4087
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+c0000000053F8EF030000000000002951
+t1408823043
+s10577
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+c0000000053F8EF0300000000000024D4
+t1408823043
+s9428
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+c0000000053F8EF0300000000000060A0
+t1408823043
+s24736
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+c0000000053F8EF0300000000000008C8
+t1408823043
+s2248
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+c0000000053F8EF0300000000000007AE
+t1408823043
+s1966
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+c0000000053F8EF0300000000000006F6
+t1408823043
+s1782
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+c0000000053F8EF0300000000000014DB
+t1408823043
+s5339
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+c0000000053F8EF030000000000001055
+t1408823043
+s4181
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+c0000000053F8EF03000000000000173A
+t1408823043
+s5946
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+c0000000053F8EF0300000000000008DF
+t1408823043
+s2271
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+c0000000053F8EF030000000000006760
+t1408823043
+s26464
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+c0000000053F8EF030000000000001483
+t1408823043
+s5251
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+c0000000053F8EF030000000000002900
+t1408823043
+s10496
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+c0000000053F8EF03000000000000086D
+t1408823043
+s2157
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+c0000000053F8EF0300000000000096A5
+t1408823043
+s38565
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+c0000000053F8EF030000000000005670
+t1408823043
+s22128
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+c0000000053F8EF030000000000001FD3
+t1408823043
+s8147
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+c0000000053F8EF030000000000001921
+t1408823043
+s6433
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+c0000000053F8EF0300000000000039FF
+t1408823043
+s14847
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+c0000000053F8EF030000000000000B32
+t1408823043
+s2866
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+c0000000053F8EF030000000000001953
+t1408823043
+s6483
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+c0000000053F8EF0300000000000012C5
+t1408823043
+s4805
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+c0000000053F8EF030000000000001203
+t1408823043
+s4611
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+c0000000053F8EF030000000000002909
+t1408823043
+s10505
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+c0000000053F8EF030000000000001A09
+t1408823043
+s6665
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+c0000000053F8EF030000000000003C00
+t1408823043
+s15360
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+c0000000053F8EF030000000000001300
+t1408823043
+s4864
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+c0000000053F8EF03000000000000099F
+t1408823043
+s2463
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+c0000000053F8EF03000000000000083A
+t1408823043
+s2106
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+c0000000053F8EF03000000000000115D
+t1408823043
+s4445
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+c0000000053F8EF0300000000000082BE
+t1408823043
+s33470
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+c0000000053F8EF030000000000001C4A
+t1408823043
+s7242
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+c0000000053F8EF030000000000003A62
+t1408823043
+s14946
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+c0000000053F8EF0300000000000040E6
+t1408823043
+s16614
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+c0000000053F8EF030000000000004866
+t1408823043
+s18534
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+c0000000053F8EF030000000000001B07
+t1408823043
+s6919
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+c0000000053F8EF03000000000000277C
+t1408823043
+s10108
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+c0000000053F8EF030000000000000D81
+t1408823043
+s3457
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+c0000000053F8EF03000000000000091F
+t1408823043
+s2335
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+c0000000053F8EF030000000000001429
+t1408823043
+s5161
+
+N/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+c0000000053F8EF030000000000008E39
+t1408823043
+s36409
+
+N/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+c0000000053F8EF0300000000000010AB
+t1408823043
+s4267
+
+N/Library/Frameworks/SDL2.framework/Headers/close_code.h
+c0000000053F8EF030000000000000589
+t1408823043
+s1417
+
 N/Library/Frameworks/SDL2.framework/SDL2
 c0000000053F8EF0D0000000000381930
 t1408823053
@@ -197,31 +417,31 @@ t1408823886
 s226
 
 N/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o
-t1408824007
-s1664
+t1408826081
+s5392
 
 N/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o
-t1408824089
-s3224
+t1408825832
+s3180
 
 N/Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip8
-t1408824033
-s8752
+t1408825832
+s9240
 
 N/Users/mike/Programming/C/Chip8/Chip8/Graphics.c
-c0000000053F8F1BD0000000000000097
-t1408823741
-s151
+c0000000053F8FADE00000000000003AC
+t1408826078
+s940
 
 N/Users/mike/Programming/C/Chip8/Chip8/Graphics.h
-c0000000053F8F24D0000000000000157
-t1408823885
-s343
+c0000000053F8F99D0000000000000293
+t1408825757
+s659
 
 N/Users/mike/Programming/C/Chip8/Chip8/main.c
-c0000000053F8F318000000000000019E
-t1408824088
-s414
+c0000000053F8F9180000000000000171
+t1408825624
+s369
 
 CBuild AST from /Users/mike/Programming/C/Chip8/Chip8/Graphics.c
 r0
@@ -231,11 +451,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesfe0bf8982aa9b941^b3ebfa982aa9b941^-284"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.2(21%IDEActivityLogMessage2@141"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.-430516888#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@141"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.-430516888#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"8283742D-95AD-41B1-B065-F5359F152F6A-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese201316132a9b941^5a46326132a9b941^-284"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.2(21%IDEActivityLogMessage2@141"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.-430518881#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@141"OS X deployment target '10.10' for architecture 'x86_64' and variant 'normal' is greater than the maximum value '10.9' for the OS X 10.9 SDK.-430518881#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"6A353FC1-EC75-425E-BC8B-B288002415F8-
 
 CCompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o /Users/mike/Programming/C/Chip8/Chip8/Graphics.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-s430516807.563299
-e430516807.598765
+s430518881.193178
+e430518881.242351
 r1
 xCompileC
 xBuild/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o
@@ -246,12 +466,56 @@ xc
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/mike/Programming/C/Chip8/Chip8/Graphics.c
 d/Users/mike/Programming/C/Chip8/Chip8/Graphics.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/mike/Programming/C/Chip8/Chip8/Graphics.c168"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o Chip8/Graphics.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler024590472aa9b941^564899472aa9b941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/mike/Programming/C/Chip8/Chip8/Graphics.c0000000000000000^2663"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o Chip8/Graphics.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Programming/C/Chip8    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.10 -g -Wno-sign-conversion -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-generated-files.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-own-target-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-all-target-headers.hmap -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-project-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources/x86_64 -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -MMD -MT dependencies -MF /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.d --serialize-diagnostics /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.dia -c /Users/mike/Programming/C/Chip8/Chip8/Graphics.c -o /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o36"421BEA93-454F-4A7B-AEDB-0BA2E163EF69-
-bA1BEDA63-1056-489C-9932-09D370418E19
+d/Library/Frameworks/SDL2.framework/Headers/SDL.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+d/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+d/Library/Frameworks/SDL2.framework/Headers/close_code.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/mike/Programming/C/Chip8/Chip8/Graphics.c168"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o Chip8/Graphics.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler9f90316132a9b941^a20b3e6132a9b941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/mike/Programming/C/Chip8/Chip8/Graphics.c0000000000000000^2663"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o Chip8/Graphics.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Programming/C/Chip8    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.10 -g -Wno-sign-conversion -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-generated-files.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-own-target-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-all-target-headers.hmap -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-project-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources/x86_64 -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -MMD -MT dependencies -MF /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.d --serialize-diagnostics /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.dia -c /Users/mike/Programming/C/Chip8/Chip8/Graphics.c -o /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Graphics.o36"37F1DC9C-9198-4009-B0A6-9BD43B759946-
+b00D7BC0C-67A1-4213-AF1F-DCC92907AB9F
 
 CCompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o /Users/mike/Programming/C/Chip8/Chip8/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-s430516888.980840
-e430516889.014210
+s430518632.316554
+e430518632.370338
 r1
 xCompileC
 xBuild/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o
@@ -262,12 +526,56 @@ xc
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/mike/Programming/C/Chip8/Chip8/main.c
 d/Users/mike/Programming/C/Chip8/Chip8/Graphics.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/mike/Programming/C/Chip8/Chip8/main.c160"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o Chip8/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler6328fb982aa9b941^ada203992aa9b941^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/mike/Programming/C/Chip8/Chip8/main.c0000000000000000^2639"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o Chip8/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Programming/C/Chip8    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.10 -g -Wno-sign-conversion -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-generated-files.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-own-target-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-all-target-headers.hmap -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-project-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources/x86_64 -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -MMD -MT dependencies -MF /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.dia -c /Users/mike/Programming/C/Chip8/Chip8/main.c -o /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o36"6A6C8978-D625-4444-A103-D1EA68CCFA7F-
-bF25E0E1A-8D72-47BF-9B82-C9E920E7CB26
+d/Library/Frameworks/SDL2.framework/Headers/SDL.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+d/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+d/Library/Frameworks/SDL2.framework/Headers/close_code.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+d/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/mike/Programming/C/Chip8/Chip8/main.c160"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o Chip8/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler802b516831a9b941^53cf5e6831a9b941^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/mike/Programming/C/Chip8/Chip8/main.c0000000000000000^2639"CompileC Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o Chip8/main.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/mike/Programming/C/Chip8    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/mike/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.10 -g -Wno-sign-conversion -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-generated-files.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-own-target-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-all-target-headers.hmap -iquote /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Chip8-project-headers.hmap -I/Users/mike/Programming/C/Chip8/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources/x86_64 -I/Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/DerivedSources -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -MMD -MT dependencies -MF /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.dia -c /Users/mike/Programming/C/Chip8/Chip8/main.c -o /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/main.o36"2269206D-F4BE-46F6-9627-9721F3335977-
+b3AD781D1-0DA9-4A2F-89C5-AC0232DEC047
 
 CLd /Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip8 normal x86_64
-s430516889.015462
-e430516889.035675
+s430518881.243809
+e430518881.265495
 r1
 xLd
 x/Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip8
@@ -309,6 +617,6 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Link /Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip843"Ld Build/Products/Debug/Chip8 normal x86_648a0304992aa9b941^0c2309992aa9b941^---0#0#1#--879"Ld Build/Products/Debug/Chip8 normal x86_64    cd /Users/mike/Programming/C/Chip8    export MACOSX_DEPLOYMENT_TARGET=10.10    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -filelist /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Chip8.LinkFileList -mmacosx-version-min=10.10 -framework SDL2 -Xlinker -dependency_info -Xlinker /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Chip8_dependency_info.dat -o /Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip836"0BF68BED-6FB6-4BC8-B0B9-E526A52B9EB5-
-bF25E0E1A-8D72-47BF-9B82-C9E920E7CB26
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Link /Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip843"Ld Build/Products/Debug/Chip8 normal x86_641b7f3e6132a9b941^dbf8436132a9b941^---0#0#1#--879"Ld Build/Products/Debug/Chip8 normal x86_64    cd /Users/mike/Programming/C/Chip8    export MACOSX_DEPLOYMENT_TARGET=10.10    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Users/mike/Programming/C/Chip8/Build/Products/Debug -F/Library/Frameworks -filelist /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Chip8.LinkFileList -mmacosx-version-min=10.10 -framework SDL2 -Xlinker -dependency_info -Xlinker /Users/mike/Programming/C/Chip8/Build/Intermediates/Chip8.build/Debug/Chip8.build/Objects-normal/x86_64/Chip8_dependency_info.dat -o /Users/mike/Programming/C/Chip8/Build/Products/Debug/Chip836"FBF49E49-B099-4970-9FF6-179C07BC0F0E-
+b00D7BC0C-67A1-4213-AF1F-DCC92907AB9F
 

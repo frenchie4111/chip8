@@ -13,13 +13,12 @@
 
 int main(int argc, const char * argv[])
 {
-    Graphics_ChipScreen *screen = malloc( sizeof( ChipScreen ) );
+    Graphics_ChipScreen *screen = Graphics_InitGraphics( 1 );
     
-    screen->screen[31] = 1;
+    while( 1 );
     
-    printf( "%llu", screen->screen[31] );
+    Graphics_Quit( screen );
     
-    free( screen );
     return 0;
 }
 

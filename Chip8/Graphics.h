@@ -14,11 +14,14 @@
 #define Chip8_Graphics_h
 
 typedef struct Graphics_ChipScreen {
-    uint64_t screen[ 32 ];
+    char screen[ 64 * 32 ];
+    SDL_Window *window;
+    SDL_Renderer *renderer;
+    SDL_Texture *texture;
 } Graphics_ChipScreen;
 
 // Initializes SDL, and returns a ChipScreen
-Graphics_ChipScreen* Graphics_initGraphics();
+Graphics_ChipScreen* Graphics_InitGraphics( int scale );
 
 // Draws the given chip screen
 void Graphics_DrawGraphics( Graphics_ChipScreen *screen );
