@@ -23,7 +23,7 @@ typedef struct Graphics_ChipScreen {
 } Graphics_ChipScreen;
 
 // Initializes SDL, and returns a ChipScreen
-Graphics_ChipScreen* Graphics_InitGraphics( int scale );
+Graphics_ChipScreen* Graphics_InitGraphics();
 
 // Draws the given chip screen
 void Graphics_DrawGraphics( Graphics_ChipScreen *screen );

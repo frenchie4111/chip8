@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>chip8test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2701FA2119AB20D300FD83FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>27C2FDC819A9288500C6D6FB</key>
 		<dict>
 			<key>primary</key>

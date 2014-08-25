@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2701FA1D19AB041400FD83FC /* chip8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2701FA1B19AB041400FD83FC /* chip8.c */; };
+		2701FA2A19AB20FC00FD83FC /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 2701FA2919AB20FC00FD83FC /* test.c */; };
+		2701FA2B19AB210F00FD83FC /* chip8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2701FA1B19AB041400FD83FC /* chip8.c */; };
+		2701FA2C19AB211200FD83FC /* Graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C2FDD619A928F000C6D6FB /* Graphics.c */; };
+		2701FA2D19AB214600FD83FC /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C2FDD919A929FB00C6D6FB /* SDL2.framework */; };
 		27C2FDCD19A9288500C6D6FB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C2FDCC19A9288500C6D6FB /* main.c */; };
 		27C2FDCF19A9288500C6D6FB /* Chip8.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C2FDCE19A9288500C6D6FB /* Chip8.1 */; };
 		27C2FDD719A928F000C6D6FB /* Graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = 27C2FDD619A928F000C6D6FB /* Graphics.c */; };
@@ -14,6 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2701FA2019AB20D300FD83FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		27C2FDC719A9288500C6D6FB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -27,6 +41,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2701FA1B19AB041400FD83FC /* chip8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = chip8.c; sourceTree = "<group>"; };
+		2701FA1C19AB041400FD83FC /* chip8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chip8.h; sourceTree = "<group>"; };
+		2701FA2219AB20D300FD83FC /* chip8test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chip8test; sourceTree = BUILT_PRODUCTS_DIR; };
+		2701FA2419AB20D300FD83FC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2701FA2919AB20FC00FD83FC /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		27C2FDC919A9288500C6D6FB /* Chip8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Chip8; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C2FDCC19A9288500C6D6FB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		27C2FDCE19A9288500C6D6FB /* Chip8.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Chip8.1; sourceTree = "<group>"; };
@@ -36,6 +55,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2701FA1F19AB20D300FD83FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2701FA2D19AB214600FD83FC /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27C2FDC619A9288500C6D6FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,11 +74,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2701FA1A19AB03F300FD83FC /* Chip8 */ = {
+			isa = PBXGroup;
+			children = (
+				2701FA1B19AB041400FD83FC /* chip8.c */,
+				2701FA1C19AB041400FD83FC /* chip8.h */,
+			);
+			name = Chip8;
+			sourceTree = "<group>";
+		};
+		2701FA2319AB20D300FD83FC /* chip8test */ = {
+			isa = PBXGroup;
+			children = (
+				2701FA2419AB20D300FD83FC /* main.c */,
+			);
+			path = chip8test;
+			sourceTree = "<group>";
+		};
 		27C2FDC019A9288500C6D6FB = {
 			isa = PBXGroup;
 			children = (
 				27C2FDD919A929FB00C6D6FB /* SDL2.framework */,
 				27C2FDCB19A9288500C6D6FB /* Chip8 */,
+				2701FA2319AB20D300FD83FC /* chip8test */,
 				27C2FDCA19A9288500C6D6FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				27C2FDC919A9288500C6D6FB /* Chip8 */,
+				2701FA2219AB20D300FD83FC /* chip8test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +113,11 @@
 		27C2FDCB19A9288500C6D6FB /* Chip8 */ = {
 			isa = PBXGroup;
 			children = (
+				2701FA1A19AB03F300FD83FC /* Chip8 */,
 				27C2FDD519A928D100C6D6FB /* Graphics */,
 				27C2FDCC19A9288500C6D6FB /* main.c */,
 				27C2FDCE19A9288500C6D6FB /* Chip8.1 */,
+				2701FA2919AB20FC00FD83FC /* test.c */,
 			);
 			path = Chip8;
 			sourceTree = "<group>";
@@ -86,6 +134,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2701FA2119AB20D300FD83FC /* chip8test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2701FA2619AB20D300FD83FC /* Build configuration list for PBXNativeTarget "chip8test" */;
+			buildPhases = (
+				2701FA1E19AB20D300FD83FC /* Sources */,
+				2701FA1F19AB20D300FD83FC /* Frameworks */,
+				2701FA2019AB20D300FD83FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chip8test;
+			productName = chip8test;
+			productReference = 2701FA2219AB20D300FD83FC /* chip8test */;
+			productType = "com.apple.product-type.tool";
+		};
 		27C2FDC819A9288500C6D6FB /* Chip8 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27C2FDD219A9288500C6D6FB /* Build configuration list for PBXNativeTarget "Chip8" */;
@@ -111,6 +176,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Mike Lyons";
+				TargetAttributes = {
+					2701FA2119AB20D300FD83FC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
 			};
 			buildConfigurationList = 27C2FDC419A9288500C6D6FB /* Build configuration list for PBXProject "Chip8" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -125,15 +195,27 @@
 			projectRoot = "";
 			targets = (
 				27C2FDC819A9288500C6D6FB /* Chip8 */,
+				2701FA2119AB20D300FD83FC /* chip8test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2701FA1E19AB20D300FD83FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2701FA2C19AB211200FD83FC /* Graphics.c in Sources */,
+				2701FA2B19AB210F00FD83FC /* chip8.c in Sources */,
+				2701FA2A19AB20FC00FD83FC /* test.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		27C2FDC519A9288500C6D6FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2701FA1D19AB041400FD83FC /* chip8.c in Sources */,
 				27C2FDD719A928F000C6D6FB /* Graphics.c in Sources */,
 				27C2FDCD19A9288500C6D6FB /* main.c in Sources */,
 			);
@@ -142,6 +224,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2701FA2719AB20D300FD83FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2701FA2819AB20D300FD83FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		27C2FDD019A9288500C6D6FB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,6 +355,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2701FA2619AB20D300FD83FC /* Build configuration list for PBXNativeTarget "chip8test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2701FA2719AB20D300FD83FC /* Debug */,
+				2701FA2819AB20D300FD83FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		27C2FDC419A9288500C6D6FB /* Build configuration list for PBXProject "Chip8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

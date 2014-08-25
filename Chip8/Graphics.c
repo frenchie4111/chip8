@@ -32,6 +32,9 @@ Graphics_ChipScreen *Graphics_InitGraphics() {
     
     Graphics_NewTexture( new_screen );
     
+    new_screen->cleared = 0;
+    new_screen->updated = 0;
+    
     return new_screen;
 }
 
@@ -43,6 +46,9 @@ void Graphics_DrawGraphics( Graphics_ChipScreen *screen ) {
         SDL_RenderCopy(screen->renderer, screen->texture, NULL, NULL);
     }
     SDL_RenderPresent(screen->renderer);
+    
+    screen->cleared = 0;
+    screen->updated = 0;
 }
 
 void Graphics_ClearScreen( Graphics_ChipScreen *screen ) {
