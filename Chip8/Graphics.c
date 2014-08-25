@@ -8,6 +8,14 @@
 
 #include "Graphics.h"
 
+static void Graphics_NewTexture( Graphics_ChipScreen *screen ) {
+    screen->texture = SDL_CreateTexture(screen->renderer,
+                                        SDL_PIXELFORMAT_RGB888,
+                                        SDL_TEXTUREACCESS_STREAMING,
+                                        64,
+                                        32);
+}
+
 Graphics_ChipScreen *Graphics_InitGraphics() {
     Graphics_ChipScreen *new_screen = malloc( sizeof( Graphics_ChipScreen ) );
     
@@ -22,19 +30,25 @@ Graphics_ChipScreen *Graphics_InitGraphics() {
     SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "nearest");
     SDL_RenderSetLogicalSize(new_screen->renderer, 64, 32);
     
-    new_screen->texture = SDL_CreateTexture(new_screen->renderer,
-                                            SDL_PIXELFORMAT_RGB888,
-                                            SDL_TEXTUREACCESS_STREAMING,
-                                            64,
-                                            32);
+    Graphics_NewTexture( new_screen );
     
     return new_screen;
 }
 
 void Graphics_DrawGraphics( Graphics_ChipScreen *screen ) {
-    SDL_RenderClear(screen->renderer);
-    SDL_RenderCopy(screen->renderer, screen->texture, NULL, NULL);
+    if( screen->cleared ) {
+        SDL_RenderClear(screen->renderer);
+    }
+    if( screen->updated ) {
+        SDL_RenderCopy(screen->renderer, screen->texture, NULL, NULL);
+    }
     SDL_RenderPresent(screen->renderer);
+}
+
+void Graphics_ClearScreen( Graphics_ChipScreen *screen ) {
+    screen->cleared = 1;
+    SDL_DestroyTexture(screen->texture);
+    Graphics_NewTexture( screen );
 }
 
 int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h ) {
@@ -71,4 +85,11 @@ int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sp
     SDL_UnlockTexture(screen->texture);
     
     return collision;
+}
+
+void Graphics_Quit( Graphics_ChipScreen *screen ) {
+    SDL_DestroyRenderer( screen->renderer );
+    SDL_DestroyTexture( screen->texture );
+    SDL_DestroyWindow( screen->window );
+    SDL_Quit();
 }

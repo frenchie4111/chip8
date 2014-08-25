@@ -25,7 +25,10 @@ int main(int argc, const char * argv[])
     col = Graphics_DrawSprite(screen, 7, 5, sprite, 3);
     Graphics_DrawGraphics(screen);
     
-    while( 1 );
+    Graphics_ClearScreen( screen );
+    Graphics_DrawGraphics( screen );
+    
+    SDL_Delay( 5000 );
     
     Graphics_Quit( screen );
     

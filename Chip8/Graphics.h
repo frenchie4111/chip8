@@ -15,10 +15,11 @@
 #define Chip8_Graphics_h
 
 typedef struct Graphics_ChipScreen {
-    char screen[ 64 * 32 ];
     SDL_Window *window;
     SDL_Renderer *renderer;
     SDL_Texture *texture;
+    char updated;
+    char cleared;
 } Graphics_ChipScreen;
 
 // Initializes SDL, and returns a ChipScreen
@@ -29,6 +30,8 @@ void Graphics_DrawGraphics( Graphics_ChipScreen *screen );
 
 // Draws a sprite onto the screen, doesn't update graphics
 int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h );
+
+void Graphics_ClearScreen( Graphics_ChipScreen *screen );
 
 // Safely quits
 void Graphics_Quit( Graphics_ChipScreen *screen );
