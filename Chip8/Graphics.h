@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #include <SDL2/SDL.h>
 
@@ -25,6 +26,9 @@ Graphics_ChipScreen* Graphics_InitGraphics( int scale );
 
 // Draws the given chip screen
 void Graphics_DrawGraphics( Graphics_ChipScreen *screen );
+
+// Draws a sprite onto the screen, doesn't update graphics
+int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h );
 
 // Safely quits
 void Graphics_Quit( Graphics_ChipScreen *screen );

@@ -8,25 +8,67 @@
 
 #include "Graphics.h"
 
-Graphics_ChipScreen *Graphics_InitGraphics( int scale ) {
+Graphics_ChipScreen *Graphics_InitGraphics() {
     Graphics_ChipScreen *new_screen = malloc( sizeof( Graphics_ChipScreen ) );
     
     SDL_Init( SDL_INIT_EVERYTHING );
     
-    SDL_CreateWindowAndRenderer( 64 * scale,
-                                32 * scale,
-                                SDL_WINDOW_SHOWN,
-                                &new_screen->window,
-                                &new_screen->renderer);
+    SDL_CreateWindowAndRenderer( 64,
+                                 32,
+                                 SDL_WINDOW_FULLSCREEN_DESKTOP,
+                                 &new_screen->window,
+                                 &new_screen->renderer);
+    
+    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "nearest");
+    SDL_RenderSetLogicalSize(new_screen->renderer, 64, 32);
     
     new_screen->texture = SDL_CreateTexture(new_screen->renderer,
                                             SDL_PIXELFORMAT_RGB888,
                                             SDL_TEXTUREACCESS_STREAMING,
-                                            64 * scale,
-                                            32 * scale);
-    
-    void *pixels;
+                                            64,
+                                            32);
     
     return new_screen;
 }
 
+void Graphics_DrawGraphics( Graphics_ChipScreen *screen ) {
+    SDL_RenderClear(screen->renderer);
+    SDL_RenderCopy(screen->renderer, screen->texture, NULL, NULL);
+    SDL_RenderPresent(screen->renderer);
+}
+
+int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h ) {
+    void *pixels;
+    int pitch;
+    SDL_Rect dimen;
+    dimen.x = x;
+    dimen.y = y;
+    dimen.w = 8;
+    dimen.h = h;
+    
+    char collision = 0;
+    SDL_LockTexture(screen->texture, &dimen, &pixels, &pitch);
+    Uint32 * image_pixels = (Uint32 *) pixels;
+    pitch /= 4; // We increased the size x4 so decrease the pitch
+    
+    for( int y = 0; y < h; y ++ ) {
+        for( int x = 0; x < 8; x ++ ) {
+            uint32_t image_pixel = image_pixels[ x + ( y * pitch ) ];
+            uint32_t sprite_pixel = sprite[ x + ( y * 8 ) ];
+            
+            if( sprite_pixel != 0 ) {
+                if( image_pixel != 0 ) {
+                    collision = 1;
+                    image_pixels[ x + ( y * pitch ) ] = 0x000000;
+                } else {
+                    image_pixels[ x + ( y * pitch ) ] = 0xFFFFFF;
+                }
+            }
+        }
+        printf( "\n" );
+    }
+    
+    SDL_UnlockTexture(screen->texture);
+    
+    return collision;
+}
