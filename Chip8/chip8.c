@@ -184,7 +184,9 @@ void Chip8_ProcessCommand( Chip8 *chip ) {
                     break;
                 }
                 case 0xF033:
-                    // Binary-Coded Decimal
+                    chip->memory[ chip->i + 2 ] = chip->V[ ( opcode & 0x0F00 ) >> 8 ] % 10;
+                    chip->memory[ chip->i + 1 ] = ( chip->V[ ( opcode & 0x0F00 ) >> 8 ] / 10 ) % 10;
+                    chip->memory[ chip->i ] = chip->V[ ( opcode & 0x0F00 ) >> 8 ] / 100;
                     break;
                 case 0xF055: { // The interpreter copies the values of registers V0 through Vx into memory, starting at the address in I.
                     uint16_t x = chip->V[ ( opcode & 0x0F00 ) >> 8 ];

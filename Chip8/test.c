@@ -331,6 +331,17 @@ void test_Chip8_EXA1( Chip8 *chip ) {
     assert( chip->pc = 0x204, "No button didn't cause skip" );
 }
 
+void test_Chip8_F033( Chip8 *chip ) {
+    test_Chip8_SetInstruction( chip, 0xF133 );
+    chip->V[ 1 ] = 234;
+    chip->i = 0x500;
+    Chip8_ProcessCommand( chip );
+    
+    assert( chip->memory[ 0x500 ] == 2, "i didn't = 2" );
+    assert( chip->memory[ 0x501 ] == 3, "i + 1 didn't = 3" );
+    assert( chip->memory[ 0x502 ] == 4, "i + 2 didn't = 4" );
+}
+
 void test_Chip8() {
     Graphics_ChipScreen *screen = Graphics_InitGraphics();
     Chip8 *chip = Chip8_Initialize( screen );
@@ -361,6 +372,7 @@ void test_Chip8() {
     test_Chip8_DXYN( chip );
     test_Chip8_EX9E( chip );
     test_Chip8_EXA1( chip );
+    test_Chip8_F033( chip );
     
     test_Chip8_SetInstruction( chip, 0xF029 );
     chip->V[ 0 ] = 0xF;
