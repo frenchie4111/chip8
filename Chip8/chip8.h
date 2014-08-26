@@ -10,6 +10,8 @@
 #define __Chip8__chip8__
 
 #include <stdio.h>
+#include <time.h>
+
 #include "Graphics.h"
 
 typedef struct Chip8 {
@@ -31,6 +33,8 @@ typedef struct Chip8 {
 } Chip8;
 
 Chip8 *Chip8_Initialize( Graphics_ChipScreen *screen );
+
+void Chip8_InitializeFont( Chip8 *chip );
 
 void Chip8_ProcessCommand( Chip8 *chip );
 

@@ -57,7 +57,7 @@ void Graphics_ClearScreen( Graphics_ChipScreen *screen ) {
     Graphics_NewTexture( screen );
 }
 
-int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h ) {
+int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint8_t sprite[], int h ) {
     void *pixels;
     int pitch;
     SDL_Rect dimen;
@@ -70,11 +70,11 @@ int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sp
     SDL_LockTexture(screen->texture, &dimen, &pixels, &pitch);
     Uint32 * image_pixels = (Uint32 *) pixels;
     pitch /= 4; // We increased the size x4 so decrease the pitch
-    
+
     for( int y = 0; y < h; y ++ ) {
         for( int x = 0; x < 8; x ++ ) {
             uint32_t image_pixel = image_pixels[ x + ( y * pitch ) ];
-            uint32_t sprite_pixel = sprite[ x + ( y * 8 ) ];
+            uint32_t sprite_pixel = sprite[ y ] & ( 0x80 >> x );
             
             if( sprite_pixel != 0 ) {
                 if( image_pixel != 0 ) {
@@ -85,11 +85,11 @@ int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sp
                 }
             }
         }
-        printf( "\n" );
     }
     
     SDL_UnlockTexture(screen->texture);
     
+    screen->updated = 1;
     return collision;
 }
 

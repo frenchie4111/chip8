@@ -29,7 +29,7 @@ Graphics_ChipScreen* Graphics_InitGraphics();
 void Graphics_DrawGraphics( Graphics_ChipScreen *screen );
 
 // Draws a sprite onto the screen, doesn't update graphics
-int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint32_t sprite[], int h );
+int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint8_t sprite[], int h );
 
 void Graphics_ClearScreen( Graphics_ChipScreen *screen );
 
