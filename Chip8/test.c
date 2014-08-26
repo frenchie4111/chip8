@@ -362,6 +362,19 @@ void test_Chip8() {
     test_Chip8_EX9E( chip );
     test_Chip8_EXA1( chip );
     
+    test_Chip8_SetInstruction( chip, 0xF029 );
+    chip->V[ 0 ] = 0xF;
+    Chip8_ProcessCommand( chip );
+    
+    test_Chip8_SetInstruction( chip, 0xD125 );
+    chip->V[ 1 ] = 10;
+    chip->V[ 2 ] = 10;
+    Chip8_ProcessCommand( chip );
+    
+    Graphics_DrawGraphics( chip->screen );
+    
+    SDL_Delay( 1000 );
+    
     printf( "\n" );
 }
 
