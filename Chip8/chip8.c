@@ -16,6 +16,7 @@ Chip8 *Chip8_Initialize( Graphics_ChipScreen *screen ) {
         chip->pc = 0x200;
         chip->sp = 0;
         
+        chip->waiting_key = 0;
         chip->redraw = 0;
         chip->screen = screen;
     }
@@ -25,8 +26,11 @@ Chip8 *Chip8_Initialize( Graphics_ChipScreen *screen ) {
     return chip;
 }
 
-void Chip8_ProcessCommand( Chip8 *chip ) {
+void Chip8_ProcessCommand( Chip8 *chip ) {    
     uint16_t opcode = ((( uint16_t )chip->memory[ chip->pc ] ) << 8 ) | (( uint16_t )chip->memory[ chip->pc + 1 ] );
+    chip->delay_timer--;
+    chip->sound_timer--;
+//    printf( "%x\n", opcode );
     
     switch ( opcode & 0xF000 ) {
         case 0x0000:
@@ -168,7 +172,7 @@ void Chip8_ProcessCommand( Chip8 *chip ) {
                     chip->V[ ( opcode & 0x0F00 ) >> 8 ] = chip->delay_timer;
                     break;
                 case 0xF00A:
-                    // Wait for button press
+                    chip->waiting_key = 1;
                     break;
                 case 0xF015: // Set delay timer
                     chip->delay_timer = chip->V[ ( opcode & 0x0F00 ) >> 8 ];

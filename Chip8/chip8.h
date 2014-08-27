@@ -27,6 +27,7 @@ typedef struct Chip8 {
     uint16_t sp;
     
     uint8_t keypad[ 16 ];
+    char waiting_key;
     
     char redraw;
     Graphics_ChipScreen *screen;
