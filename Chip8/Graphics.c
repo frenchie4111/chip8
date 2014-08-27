@@ -57,31 +57,29 @@ void Graphics_ClearScreen( Graphics_ChipScreen *screen ) {
     Graphics_NewTexture( screen );
 }
 
-int Graphics_DrawSprite( Graphics_ChipScreen *screen,  int x, int y, uint8_t sprite[], int h ) {
+int Graphics_DrawSprite( Graphics_ChipScreen *screen, int start_x, int start_y, uint8_t sprite[], int h ) {
     void *pixels;
     int pitch;
-    SDL_Rect dimen;
-    dimen.x = x;
-    dimen.y = y;
-    dimen.w = 8;
-    dimen.h = h;
     
     char collision = 0;
-    SDL_LockTexture(screen->texture, &dimen, &pixels, &pitch);
+    SDL_LockTexture(screen->texture, NULL, &pixels, &pitch);
     Uint32 * image_pixels = (Uint32 *) pixels;
     pitch /= 4; // We increased the size x4 so decrease the pitch
 
-    for( int y = 0; y < h; y ++ ) {
-        for( int x = 0; x < 8; x ++ ) {
-            uint32_t image_pixel = image_pixels[ x + ( y * pitch ) ];
-            uint32_t sprite_pixel = sprite[ y ] & ( 0x80 >> x );
+    for( int sprite_y = 0; sprite_y < h; sprite_y ++ ) {
+        for( int sprite_x = 0; sprite_x < 8; sprite_x ++ ) {
+            uint32_t actual_x = ( start_x + sprite_x ) % 64; // Rollover
+            uint32_t actual_y = ( start_y + sprite_y ) % 32;
+            uint32_t actual_i = actual_x + ( actual_y * pitch );
+            
+            uint32_t sprite_pixel = sprite[ sprite_y ] & ( 0x80 >> sprite_x );
             
             if( sprite_pixel != 0 ) {
-                if( image_pixel != 0 ) {
+                if( image_pixels[ actual_i ] != 0 ) {
                     collision = 1;
-                    image_pixels[ x + ( y * pitch ) ] = 0x000000;
+                    image_pixels[ actual_i ] = 0x000000;
                 } else {
-                    image_pixels[ x + ( y * pitch ) ] = 0xFFFFFF;
+                    image_pixels[ actual_i ] = 0xFFFFFF;
                 }
             }
         }

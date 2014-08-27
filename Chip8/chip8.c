@@ -13,7 +13,7 @@ Chip8 *Chip8_Initialize( Graphics_ChipScreen *screen ) {
     
     if( chip ) {
         chip->i = 0;
-        chip->pc = 0;
+        chip->pc = 0x200;
         chip->sp = 0;
         
         chip->redraw = 0;
@@ -143,7 +143,8 @@ void Chip8_ProcessCommand( Chip8 *chip ) {
             break;
         case 0xD000: { // Display n-byte sprite starting at memory location I at (Vx, Vy), set VF = collision.
             uint8_t *sprite = (uint8_t *) ( (chip->memory) + ( chip->i ) );
-            Graphics_DrawSprite( chip->screen, chip->V[ ( opcode & 0x0F00 ) >> 8 ], chip->V[ ( opcode & 0x00F0 ) >> 4 ], sprite, opcode & 0x000F );
+            int collision = Graphics_DrawSprite( chip->screen, chip->V[ ( opcode & 0x0F00 ) >> 8 ], chip->V[ ( opcode & 0x00F0 ) >> 4 ], sprite, opcode & 0x000F );
+            chip->V[ 0xF ] = collision;
             chip->redraw = 1;
             break;
         }
@@ -210,8 +211,20 @@ void Chip8_ProcessCommand( Chip8 *chip ) {
 }
 
 void Chip8_LoadRom( Chip8 *chip, char *romPath ) {
-    chip->memory[ 0 ] = 0xFF;
-    chip->memory[ 1 ] = 0x22;
+    FILE *file = fopen( romPath, "rb" );
+    
+    fseek( file, 0, SEEK_END ); // seek to end of file
+    long size = ftell( file ); // get current file pointer
+    fseek(file, 0, SEEK_SET); // seek back to beginning of file
+    
+    unsigned char buffer; // note: 1 byte
+    
+    for( int i = 0; i < size; i++ ) {
+        fread(&buffer, 1, 1, file);
+        chip->memory[ 0x200 + i ] = buffer;
+    }
+    
+    fclose( file );
 }
 
 void Chip8_InitializeFont( Chip8 *chip ) {
